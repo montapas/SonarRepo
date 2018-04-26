@@ -1,0 +1,10 @@
+D:\Office\Eclipse\wrkspc\Hygieia-master\collectors\build\sonar\src\main\java\com\capitalone\dashboard\model\SonarCollector.java
+D:\Office\Eclipse\wrkspc\Hygieia-master\collectors\build\sonar\src\main\java\com\capitalone\dashboard\Application.java
+D:\Office\Eclipse\wrkspc\Hygieia-master\collectors\build\sonar\src\main\java\com\capitalone\dashboard\collector\SonarClient.java
+D:\Office\Eclipse\wrkspc\Hygieia-master\collectors\build\sonar\src\main\java\com\capitalone\dashboard\collector\SonarCollectorTask.java
+D:\Office\Eclipse\wrkspc\Hygieia-master\collectors\build\sonar\src\main\java\com\capitalone\dashboard\collector\SonarSettings.java
+D:\Office\Eclipse\wrkspc\Hygieia-master\collectors\build\sonar\src\main\java\com\capitalone\dashboard\collector\RestOperationsSupplier.java
+D:\Office\Eclipse\wrkspc\Hygieia-master\collectors\build\sonar\src\main\java\com\capitalone\dashboard\repository\SonarProjectRepository.java
+D:\Office\Eclipse\wrkspc\Hygieia-master\collectors\build\sonar\src\main\java\com\capitalone\dashboard\repository\SonarCollectorRepository.java
+D:\Office\Eclipse\wrkspc\Hygieia-master\collectors\build\sonar\src\main\java\com\capitalone\dashboard\collector\DefaultSonarClient.java
+D:\Office\Eclipse\wrkspc\Hygieia-master\collectors\build\sonar\src\main\java\com\capitalone\dashboard\model\SonarProject.java
