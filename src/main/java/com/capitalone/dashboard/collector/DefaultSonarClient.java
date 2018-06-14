@@ -150,11 +150,7 @@ public class DefaultSonarClient implements SonarClient {
         Object obj = json.get(key);
         return obj == null ? null : obj.toString();
     }
-    @SuppressWarnings("unused")
-    private Integer integer(JSONObject json, String key) {
-        Object obj = json.get(key);
-        return obj == null ? null : (Integer) obj;
-    }
+  
 
     @SuppressWarnings("unused")
     private BigDecimal decimal(JSONObject json, String key) {
