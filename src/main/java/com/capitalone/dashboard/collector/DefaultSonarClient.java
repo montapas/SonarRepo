@@ -71,7 +71,7 @@ public class DefaultSonarClient implements SonarClient {
 
             for (Object obj : parseAsArray(url)) {
                 JSONObject prjData = (JSONObject) obj;
-
+//Test code
                 SonarProject project = new SonarProject();
                 project.setInstanceUrl(instanceUrl);
                 project.setProjectId(str(prjData, ID));
