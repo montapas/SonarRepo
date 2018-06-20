@@ -103,7 +103,7 @@ public class SonarCollectorTask extends CollectorTask<SonarCollector> {
 	 *            the {@link SonarCollector}
 	 */
 
-    @SuppressWarnings("PMD.AvoidDeeplyNestedIfStmts") // agreed PMD, fixme
+    @SuppressWarnings("PMD.AvoidDeeplyNestedIfStmts")  
     private void clean(SonarCollector collector, List<SonarProject> existingProjects) {
         Set<ObjectId> uniqueIDs = new HashSet<>();
         for (com.capitalone.dashboard.model.Component comp : dbComponentRepository
