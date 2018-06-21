@@ -193,11 +193,7 @@ public class SonarCollectorTask extends CollectorTask<SonarCollector> {
         log("New projects", start, count);
     }
 
-    @SuppressWarnings("unused")
-	private boolean isNewProject(SonarCollector collector, SonarProject application) {
-        return sonarProjectRepository.findSonarProject(
-                collector.getId(), application.getInstanceUrl(), application.getProjectId()) == null;
-    }
+   
 
     private boolean isNewQualityData(SonarProject project, CodeQuality codeQuality) {
         return codeQualityRepository.findByCollectorItemIdAndTimestamp(
