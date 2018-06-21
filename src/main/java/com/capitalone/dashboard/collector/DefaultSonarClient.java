@@ -152,12 +152,12 @@ public class DefaultSonarClient implements SonarClient {
     }
   
 
-    @SuppressWarnings("unused")
+  /*  @SuppressWarnings("unused")
     private BigDecimal decimal(JSONObject json, String key) {
         Object obj = json.get(key);
         return obj == null ? null : new BigDecimal(obj.toString());
     }
-
+*/
     @SuppressWarnings("unused")
     private Boolean bool(JSONObject json, String key) {
         Object obj = json.get(key);
