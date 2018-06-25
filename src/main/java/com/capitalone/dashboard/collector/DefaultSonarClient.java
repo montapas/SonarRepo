@@ -80,7 +80,7 @@ public class DefaultSonarClient implements SonarClient {
             }
 
         } catch (ParseException e) {
-     //  LOG.error("Could not parse response from: " + url, e);
+       LOG.error("Could not parse response from: " + url, e);
         } catch (RestClientException rce) {
            LOG.error(rce);
         }
@@ -121,7 +121,7 @@ public class DefaultSonarClient implements SonarClient {
             }
 
         } catch (ParseException e) {
-          //  LOG.error("Could not parse response from: " + url, e);
+          LOG.error("Could not parse response from: " + url, e);
         } catch (RestClientException rce) {
             LOG.error(rce);
         }
@@ -152,12 +152,12 @@ public class DefaultSonarClient implements SonarClient {
     }
   
 
-  /*  @SuppressWarnings("unused")
+    @SuppressWarnings("unused")
     private BigDecimal decimal(JSONObject json, String key) {
         Object obj = json.get(key);
         return obj == null ? null : new BigDecimal(obj.toString());
     }
-*/
+ 
     @SuppressWarnings("unused")
     private Boolean bool(JSONObject json, String key) {
         Object obj = json.get(key);
