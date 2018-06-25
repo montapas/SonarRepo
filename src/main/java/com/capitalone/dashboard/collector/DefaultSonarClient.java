@@ -55,7 +55,7 @@ public class DefaultSonarClient implements SonarClient {
 
     @Autowired
     public DefaultSonarClient(Supplier<RestOperations> restOperationsSupplier, SonarSettings settings) {
-        this.httpHeaders = new HttpEntity<String>(
+        this.httpHeaders = new HttpEntity<>(
                 this.createHeaders(settings.getUsername(), settings.getPassword())
             );
         this.rest = restOperationsSupplier.get();
