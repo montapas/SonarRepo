@@ -7,10 +7,7 @@ public enum CodeQualityType {
     StaticAnalysis(CollectorType.CodeQuality),
     SecurityAnalysis(CollectorType.StaticSecurityScan);
 
-    private final CollectorType collectorType;
-    CodeQualityType(CollectorType collectorType) {
-        this.collectorType = collectorType;
-    }
+   
 
     public static CodeQualityType fromString(String value) {
         for (CodeQualityType qualityType : values()) {
