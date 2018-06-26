@@ -44,6 +44,7 @@ public class DefaultSonarClient implements SonarClient {
     private static final String ALERT = "alert";
     private static final String ALERT_TEXT = "alert_text";
     private static final String VALUE = "val";
+     private final static String MYVALUE = "val"; //Error line
     private static final String FORMATTED_VALUE = "frmt_val";
     private static final String STATUS_WARN = "WARN";
     private static final String STATUS_ALERT = "ALERT";
