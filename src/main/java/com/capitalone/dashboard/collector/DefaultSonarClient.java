@@ -48,7 +48,7 @@ public class DefaultSonarClient implements SonarClient {
     private static final String STATUS_WARN = "WARN";
     private static final String STATUS_ALERT = "ALERT";
     private static final String DATE = "date";
-
+    private final static  String URL = "http://google.com";
     private final RestOperations rest;
     private final HttpEntity<String> httpHeaders;
     private final SonarSettings sonarSettings;
