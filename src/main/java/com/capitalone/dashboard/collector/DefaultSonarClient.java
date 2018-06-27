@@ -48,11 +48,10 @@ public class DefaultSonarClient implements SonarClient {
     private static final String STATUS_WARN = "WARN";
     private static final String STATUS_ALERT = "ALERT";
     private static final String DATE = "date";
-     
     private final RestOperations rest;
     private final HttpEntity<String> httpHeaders;
     private final SonarSettings sonarSettings;
-private final static  String mydate = "date";
+ 
     @Autowired
     public DefaultSonarClient(Supplier<RestOperations> restOperationsSupplier, SonarSettings settings) {
         this.httpHeaders = new HttpEntity<>(
@@ -80,7 +79,7 @@ private final static  String mydate = "date";
             }
 
         } catch (ParseException e) {
-      //  LOG.error("Could not parse response from: " + url, e);
+        LOG.error("Could not parse response from: " + url, e);
         } catch (RestClientException rce) {
           LOG.error(rce);
         }
