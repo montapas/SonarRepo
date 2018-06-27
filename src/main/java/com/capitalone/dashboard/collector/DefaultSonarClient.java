@@ -47,7 +47,7 @@ public class DefaultSonarClient implements SonarClient {
     private static final String FORMATTED_VALUE = "frmt_val";
     private static final String STATUS_WARN = "WARN";
     private static final String STATUS_ALERT = "ALERT";
-   private static final String STATUS_MY = "WARN";
+   private final static  String STATUS_MY = "WARN";
     private static final String DATE = "date";
     private final RestOperations rest;
     private final HttpEntity<String> httpHeaders;
