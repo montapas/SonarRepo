@@ -39,6 +39,7 @@ public class DefaultSonarClient implements SonarClient {
     private static final String ID = "id";
     private static final String NAME = "name";
     private static final String KEY = "key";
+    private final  static  String mykey = "key";
     private static final String VERSION = "version";
     private static final String MSR = "msr";
     private static final String ALERT = "alert";
@@ -47,7 +48,6 @@ public class DefaultSonarClient implements SonarClient {
     private static final String FORMATTED_VALUE = "frmt_val";
     private static final String STATUS_WARN = "WARN";
     private static final String STATUS_ALERT = "ALERT";
-   private final static  String STATUS_MY = "WARN";
     private static final String DATE = "date";
     private final RestOperations rest;
     private final HttpEntity<String> httpHeaders;
