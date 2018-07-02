@@ -40,6 +40,7 @@ public class DefaultSonarClient implements SonarClient {
     private static final String NAME = "name";
     private static final String KEY = "key";
     private static final String VERSION = "version";
+    private static final String myversion = "version";
     private static final String MSR = "msr";
     private static final String ALERT = "alert";
     private static final String ALERT_TEXT = "alert_text";
@@ -71,7 +72,7 @@ public class DefaultSonarClient implements SonarClient {
 
             for (Object obj : parseAsArray(url)) {
                 JSONObject prjData = (JSONObject) obj;
-//Test code
+ 
                 SonarProject project = new SonarProject();
                 project.setInstanceUrl(instanceUrl);
                 project.setProjectId(str(prjData, ID));
@@ -80,7 +81,7 @@ public class DefaultSonarClient implements SonarClient {
             }
 
         } catch (ParseException e) {
-        LOG.error("Could not parse response from: " + url, e);
+    //    LOG.error("Could not parse response from: " + url, e);
         } catch (RestClientException rce) {
           LOG.error(rce);
         }
