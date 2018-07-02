@@ -39,7 +39,6 @@ public class DefaultSonarClient implements SonarClient {
     private static final String ID = "id";
     private static final String NAME = "name";
     private static final String KEY = "key";
-    private final static String mykey = "key";
     private static final String VERSION = "version";
     private static final String MSR = "msr";
     private static final String ALERT = "alert";
@@ -81,7 +80,7 @@ public class DefaultSonarClient implements SonarClient {
             }
 
         } catch (ParseException e) {
-        // LOG.error("Could not parse response from: " + url, e);
+         LOG.error("Could not parse response from: " + url, e);
         } catch (RestClientException rce) {
           LOG.error(rce);
         }
