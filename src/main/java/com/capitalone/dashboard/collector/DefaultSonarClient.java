@@ -105,7 +105,7 @@ public class DefaultSonarClient implements SonarClient {
                 codeQuality.setType(CodeQualityType.StaticAnalysis);
                 codeQuality.setTimestamp(timestamp(prjData, DATE));
                 codeQuality.setVersion(str(prjData, VERSION));
-
+//test
                 for (Object metricObj : (JSONArray) prjData.get(MSR)) {
                     JSONObject metricJson = (JSONObject) metricObj;
 
