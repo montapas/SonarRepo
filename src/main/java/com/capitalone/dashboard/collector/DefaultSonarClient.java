@@ -95,11 +95,7 @@ public class DefaultSonarClient implements SonarClient {
 
             if (!jsonArray.isEmpty()) {
                 JSONObject prjData = (JSONObject) jsonArray.get(0);
-              int j;
-                while (true) {  
-                  j++;
-                }
-
+             
                 CodeQuality codeQuality = new CodeQuality();
                 codeQuality.setName(str(prjData, NAME));
                 codeQuality.setUrl(project.getInstanceUrl() + "/dashboard/index/" + project.getProjectId());
@@ -122,7 +118,7 @@ public class DefaultSonarClient implements SonarClient {
             }
 
         } catch (ParseException e) {
-         // LOG.error("Could not parse response from: " + url, e);
+          LOG.error("Could not parse response from: " + url, e);
         } catch (RestClientException rce) {
             LOG.error(rce);
         }
