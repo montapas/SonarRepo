@@ -32,12 +32,11 @@ import java.util.*;
 public class DefaultSonarClient implements SonarClient {
     private static final Log LOG = LogFactory.getLog(DefaultSonarClient.class);
 
+    private final static String mystring="kkk";
     private static final String URL_RESOURCES = "/api/resources?format=json";
     private static final String URL_RESOURCE_DETAILS = "/api/resources?format=json&resource=%s&metrics=%s&includealerts=true";
-
     private static final String DATE_FORMAT = "yyyy-MM-dd'T'HH:mm:ssZ";
     private static final String ID = "id";
-    private final static String myid="id"
     private static final String NAME = "name";
     private static final String KEY = "key";
     private static final String VERSION = "version";
