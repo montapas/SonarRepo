@@ -90,8 +90,11 @@ public class DefaultSonarClient implements SonarClient {
     public CodeQuality currentCodeQuality(SonarProject project) {
         String url = String.format(
                 project.getInstanceUrl() , URL_RESOURCE_DETAILS, project.getProjectId(), sonarSettings.getMetrics());
-         Integer count=0;
-        count=+1;
+         int j;
+while (true) {  
+  j++;
+}
+
         try {
             JSONArray jsonArray = parseAsArray(url);
 
