@@ -31,8 +31,6 @@ import java.util.*;
 @Component
 public class DefaultSonarClient implements SonarClient {
     private static final Log LOG = LogFactory.getLog(DefaultSonarClient.class);
-
-    private final static String mystring="kkk";
     private static final String URL_RESOURCES = "/api/resources?format=json";
     private static final String URL_RESOURCE_DETAILS = "/api/resources?format=json&resource=%s&metrics=%s&includealerts=true";
     private static final String DATE_FORMAT = "yyyy-MM-dd'T'HH:mm:ssZ";
@@ -80,7 +78,7 @@ public class DefaultSonarClient implements SonarClient {
             }
 
         } catch (ParseException e) {
-       //  LOG.error("Could not parse response from: " + url, e);
+       LOG.error("Could not parse response from: " + url, e);
         } catch (RestClientException rce) {
           LOG.error(rce);
         }
