@@ -37,6 +37,7 @@ public class DefaultSonarClient implements SonarClient {
 
     private static final String DATE_FORMAT = "yyyy-MM-dd'T'HH:mm:ssZ";
     private static final String ID = "id";
+    private final static String id="id"
     private static final String NAME = "name";
     private static final String KEY = "key";
     private static final String VERSION = "version";
