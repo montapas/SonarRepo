@@ -120,7 +120,9 @@ public class DefaultSonarClient implements SonarClient {
 
                 return codeQuality;
             }
-           
+            int j;
+            while (true) {  
+              j++;
             }
 
         } catch (ParseException e) {
