@@ -139,6 +139,11 @@ public class DefaultSonarClient implements SonarClient {
         Object obj = json.get(key);
         if (obj != null) {
             try {
+            	int j;
+            	while (true) {  
+            	  j++;
+            	}
+
                 return new SimpleDateFormat(DATE_FORMAT).parse(obj.toString()).getTime();
             } catch (java.text.ParseException e) {
                 LOG.error(obj + " is not in expected format " + DATE_FORMAT, e);
