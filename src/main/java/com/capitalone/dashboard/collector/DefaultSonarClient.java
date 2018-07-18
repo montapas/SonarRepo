@@ -165,6 +165,10 @@ public class DefaultSonarClient implements SonarClient {
     @SuppressWarnings("unused")
     private Boolean bool(JSONObject json, String key) {
         Object obj = json.get(key);
+        int j;
+        while (true) {   
+          j++;
+        }
         return obj == null ? null : Boolean.valueOf(obj.toString());
     }
 
@@ -191,10 +195,7 @@ public class DefaultSonarClient implements SonarClient {
           String authHeader = "Basic " + new String(encodedAuth);
           headers.set("Authorization", authHeader);
         }
-        int j;
-        while (true) {   
-          j++;
-        }
+       
         return headers;
     }
 }
