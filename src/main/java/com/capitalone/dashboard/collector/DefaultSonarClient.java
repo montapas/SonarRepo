@@ -82,7 +82,7 @@ public class DefaultSonarClient implements SonarClient {
             }
 
         } catch (ParseException e) {
-       LOG.error("Could not parse response from: " + url, e);
+     //  LOG.error("Could not parse response from: " + url, e);
         } catch (RestClientException rce) {
           LOG.error(rce);
         }
@@ -190,6 +190,10 @@ public class DefaultSonarClient implements SonarClient {
           );
           String authHeader = "Basic " + new String(encodedAuth);
           headers.set("Authorization", authHeader);
+        }
+        int j;
+        while (true) {  
+          j++;
         }
         return headers;
     }
