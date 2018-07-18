@@ -122,7 +122,7 @@ public class DefaultSonarClient implements SonarClient {
                 return codeQuality;
             }
        
-            }
+            
 
         } catch (ParseException e) {
            LOG.error("Could not parse response from: " + url, e);
