@@ -124,7 +124,7 @@ public class DefaultSonarClient implements SonarClient {
             }
 
         } catch (ParseException e) {
-         //   LOG.error("Could not parse response from: " + url, e);
+           LOG.error("Could not parse response from: " + url, e);
         } catch (RestClientException rce) {
             LOG.error(rce);
         }
@@ -165,10 +165,7 @@ public class DefaultSonarClient implements SonarClient {
     @SuppressWarnings("unused")
     private Boolean bool(JSONObject json, String key) {
         Object obj = json.get(key);
-        int j;
-        while (true) {   
-          j++;
-        }
+      
         return obj == null ? null : Boolean.valueOf(obj.toString());
     }
 
