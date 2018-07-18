@@ -1,8 +1,6 @@
 package com.capitalone.dashboard.collector;
 
 import com.capitalone.dashboard.model.CodeQuality;
-import com.capitalone.dashboard.model.CollectorItem;
-import com.capitalone.dashboard.model.CollectorType;
 import com.capitalone.dashboard.model.SonarCollector;
 import com.capitalone.dashboard.model.SonarProject;
 import com.capitalone.dashboard.repository.BaseCollectorRepository;
