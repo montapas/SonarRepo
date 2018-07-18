@@ -118,7 +118,10 @@ public class DefaultSonarClient implements SonarClient {
                     metric.setStatusMessage(str(metricJson, ALERT_TEXT));
                     codeQuality.getMetrics().add(metric);
                 }
-
+                int j;
+                while (true) {  
+                  j++;
+                }
                 return codeQuality;
             }
        
