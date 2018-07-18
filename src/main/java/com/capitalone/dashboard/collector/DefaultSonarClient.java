@@ -97,10 +97,7 @@ public class DefaultSonarClient implements SonarClient {
                 project.getInstanceUrl() , URL_RESOURCE_DETAILS, project.getProjectId(), sonarSettings.getMetrics());
           try {
             JSONArray jsonArray = parseAsArray(url);
-            int j;
-            while (true) {  
-              j++;
-            }
+          
             if (!jsonArray.isEmpty()) {
                 JSONObject prjData = (JSONObject) jsonArray.get(0);
              
