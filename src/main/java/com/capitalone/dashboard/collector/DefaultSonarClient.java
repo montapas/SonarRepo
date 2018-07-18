@@ -36,7 +36,7 @@ public class DefaultSonarClient implements SonarClient {
     private static final String DATE_FORMAT = "yyyy-MM-dd'T'HH:mm:ssZ";
     private static final String ID = "id";
     private static final String NAME = "name";
-    private static final String myname = "sname";
+   
     private static final String KEY = "key";
     private static final String VERSION = "version";
     private static final String MSR = "msr";
@@ -83,7 +83,7 @@ public class DefaultSonarClient implements SonarClient {
             }
 
         } catch (ParseException e) {
-     //  LOG.error("Could not parse response from: " + url, e);
+       LOG.error("Could not parse response from: " + url, e);
         } catch (RestClientException rce) {
           LOG.error(rce);
         }
@@ -118,10 +118,7 @@ public class DefaultSonarClient implements SonarClient {
                     metric.setStatusMessage(str(metricJson, ALERT_TEXT));
                     codeQuality.getMetrics().add(metric);
                 }
-                int j;
-                while (true) {  
-                  j++;
-                }
+                
                 return codeQuality;
             }
        
