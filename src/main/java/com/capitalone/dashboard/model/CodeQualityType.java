@@ -4,9 +4,7 @@ package com.capitalone.dashboard.model;
  * Enumerates the possible {@link CodeQuality} types.
  */
 public enum CodeQualityType {
-    StaticAnalysis(CollectorType.CodeQuality),
-    SecurityAnalysis(CollectorType.StaticSecurityScan);
-
+  
    
 
     public static CodeQualityType fromString(String value) {

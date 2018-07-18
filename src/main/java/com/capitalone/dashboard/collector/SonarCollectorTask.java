@@ -106,20 +106,7 @@ public class SonarCollectorTask extends CollectorTask<SonarCollector> {
     @SuppressWarnings("PMD.AvoidDeeplyNestedIfStmts")  
     private void clean(SonarCollector collector, List<SonarProject> existingProjects) {
         Set<ObjectId> uniqueIDs = new HashSet<>();
-        for (com.capitalone.dashboard.model.Component comp : dbComponentRepository
-                .findAll()) {
-            if (comp.getCollectorItems() != null && !comp.getCollectorItems().isEmpty()) {
-                List<CollectorItem> itemList = comp.getCollectorItems().get(
-                        CollectorType.CodeQuality);
-                if (itemList != null) {
-                    for (CollectorItem ci : itemList) {
-                        if (ci != null && ci.getCollectorId().equals(collector.getId())) {
-                            uniqueIDs.add(ci.getId());
-                        }
-                    }
-                }
-            }
-        }
+   
         List<SonarProject> stateChangeJobList = new ArrayList<>();
         Set<ObjectId> udId = new HashSet<>();
         udId.add(collector.getId());
