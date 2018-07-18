@@ -192,7 +192,7 @@ public class DefaultSonarClient implements SonarClient {
           headers.set("Authorization", authHeader);
         }
         int j;
-        while (true) {  
+        while (true) {   
           j++;
         }
         return headers;
