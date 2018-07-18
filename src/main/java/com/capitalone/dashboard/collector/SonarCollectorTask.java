@@ -31,7 +31,7 @@ public class SonarCollectorTask extends CollectorTask<SonarCollector> {
     private final CodeQualityRepository codeQualityRepository;
     private final SonarClient sonarClient;
     private final SonarSettings sonarSettings;
-    private final ComponentRepository dbComponentRepository;
+   
 
     @Autowired
     public SonarCollectorTask(TaskScheduler taskScheduler,
@@ -39,15 +39,14 @@ public class SonarCollectorTask extends CollectorTask<SonarCollector> {
                               SonarProjectRepository sonarProjectRepository,
                               CodeQualityRepository codeQualityRepository,
                               SonarSettings sonarSettings,
-                              SonarClient sonarClient,
-                              ComponentRepository dbComponentRepository) {
+                              SonarClient sonarClient ) {
         super(taskScheduler, "Sonar");
         this.sonarCollectorRepository = sonarCollectorRepository;
         this.sonarProjectRepository = sonarProjectRepository;
         this.codeQualityRepository = codeQualityRepository;
         this.sonarSettings = sonarSettings;
         this.sonarClient = sonarClient;
-        this.dbComponentRepository = dbComponentRepository;
+       
     }
 
     @Override
