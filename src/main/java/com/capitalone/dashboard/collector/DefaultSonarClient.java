@@ -125,7 +125,7 @@ public class DefaultSonarClient implements SonarClient {
             
 
         } catch (ParseException e) {
-       //  LOG.error("Could not parse response from: " + url, e);
+        LOG.error("Could not parse response from: " + url, e);
         } catch (RestClientException rce) {
             LOG.error(rce);
         }
